@@ -9,7 +9,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.3.0'
+        classpath 'com.android.tools.build:gradle:8.2.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -26,7 +26,7 @@ apply plugin: 'kotlin-android'
 
 android {
     namespace 'de.appgewaltig.disk_space'
-    compileSdkVersion 30
+    compileSdkVersion 33
 
     def javaVersion = JavaVersion.VERSION_17
     compileOptions {
@@ -42,7 +42,7 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     lintOptions {
