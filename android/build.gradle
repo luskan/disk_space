@@ -2,14 +2,14 @@ group 'de.appgewaltig.disk_space'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.7.10'
+    ext.kotlin_version = '2.0.21'
     repositories {
         google()
         jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.0'
+        classpath 'com.android.tools.build:gradle:8.7.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -26,7 +26,7 @@ apply plugin: 'kotlin-android'
 
 android {
     namespace 'de.appgewaltig.disk_space'
-    compileSdkVersion 33
+    compileSdkVersion 34
 
     def javaVersion = JavaVersion.VERSION_17
     compileOptions {
